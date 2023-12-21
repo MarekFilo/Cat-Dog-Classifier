@@ -1,13 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import (
-    Conv2D,
-    MaxPooling2D,
-    Flatten,
-    Dense,
-    Dropout,
-    BatchNormalization,
-)
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+
 from config.model_config import ModelConfig
 
 
@@ -23,7 +17,7 @@ def create_model(config: ModelConfig):
             Conv2D(256, (3, 3), activation="relu"),
             MaxPooling2D(2, 2),
             Flatten(),
-            Dropout(config.droput_rate),
+            Dropout(config.dropout_rate),
             Dense(256, activation="relu"),
             Dense(1, activation="sigmoid"),
         ]
