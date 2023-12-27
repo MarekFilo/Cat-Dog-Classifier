@@ -36,7 +36,7 @@ Upon running the main file, a window will appear allowing you to load or train a
 
 
 ### Note: 
-The 'data_example/ directory' is provided as a reference and should be renamed to 'data' as original dataset was too large or change the path `TrainConfig` class located in `src/config/train_config`. You should replace it with the actual training and testing datasets. Data used for training can be found here [Kaggle](https://www.kaggle.com/datasets/tongpython/cat-and-dog/data) by [tongpython](https://www.kaggle.com/tongpython) 
+The 'data_example/ directory' is provided as a reference and should be renamed to 'data' as the original dataset was too large or change the path in `TrainConfig` class located in `src/config/train_config`. You should replace it with the actual training and testing datasets. Data used for training can be found here [Kaggle](https://www.kaggle.com/datasets/tongpython/cat-and-dog/data) by [tongpython](https://www.kaggle.com/tongpython) 
 
 ## Model Performance and Potential Improvements
 
@@ -44,7 +44,7 @@ Due to limited computing resources, the model may not achieve optimal performanc
 
 ### Suggestions for Model Improvement:
 
-1. **Adjust Model Configuration:** Experiment with different configurations in the `ModelConfig` class, located in `src/config/model_config` , such as changing the input shape, batch size, number of epochs, and dropout rate. You can also try adding new options in the `ModelConfig`, more convolutional layers or increasing the complexity of the neural network.
+1. **Adjust Model Configuration:** Experiment with different configurations in the `ModelConfig` class, located in `src/config/model_config`, such as changing the input shape, batch size, number of epochs, and dropout rate. You can also try adding new options in the `ModelConfig`, more convolutional layers or increasing the complexity of the neural network.
 
 2. **Hyperparameter Tuning:** Fine-tune hyperparameters like learning rate, dropout rate, or regularization strength to find the best combination for your specific dataset.
 
